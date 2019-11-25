@@ -6,7 +6,7 @@ namespace ZooMealPlanner
     {
         private static void Main(string[] args)
         {
-            var menu = new Menu();
+            Menu.Display();
 
         }
     }

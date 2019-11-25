@@ -1,21 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using ZooMealPlanner.Animals;
 
 namespace ZooMealPlanner
 {
-    internal sealed class Menu
+    class Menu
     {
-        private Canine Wolf = new Canine();
-        private Feline Tiger = new Feline();
+        private const int FIRST_COLUMN_ALIGNMENT = -15;
 
-        public string GetMealPlan()
+        public static void Display()
         {
-            Console.WriteLine();
-            Console.WriteLine("****************");
-            Console.WriteLine("Zoo Menu Planner");
-            Console.WriteLine("****************");
-            
+            List<Mammal> Bears = new List<Mammal>();
+            Bears.Add(new BlackBear());
+            Bears.Add(new PolarBear());
+
+
+            List<Mammal> Monkey = new List<Mammal>();
+            Monkey.Add(new Squirrel());
+            Monkey.Add(new Howler());
+            Monkey.Add(new Colobus());
         }
+
+
     }
 }
