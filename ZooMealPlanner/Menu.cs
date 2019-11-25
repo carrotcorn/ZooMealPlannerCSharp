@@ -6,8 +6,8 @@ namespace ZooMealPlanner
 {
     internal sealed class Menu
     {
-        private Canine dog = new Canine();
-        private Feline cat = new Feline();
+        private Canine Wolf = new Canine();
+        private Feline Tiger = new Feline();
 
         public string GetMealPlan()
         {
