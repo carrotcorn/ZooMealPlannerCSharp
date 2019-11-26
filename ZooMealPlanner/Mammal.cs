@@ -6,7 +6,7 @@ namespace ZooMealPlanner
 {
     public class Mammal
     {
-        public const string INSTRUCTION = "You're going to need tot keep the area secure at all times";
+        public const string INSTRUCTION = "You're going to need to keep the area secure at all times";
         public Mammal() { }
 
         public Decimal getWeight()
@@ -35,9 +35,9 @@ namespace ZooMealPlanner
             Console.WriteLine("Mammal Type: " + type);
             Console.WriteLine("Species: " + species);
             Console.WriteLine("Weight: " + weight.ToString("F") + "KG");
-            Console.WriteLine("Serving : " + (object)Math.Round(Convert.ToDecimal(weight * serveRatio), 3) + " " + food);
+            Console.WriteLine("Serving type : " + (object)Math.Round(Convert.ToDecimal(weight * serveRatio), 3) + "kg " + food);
             Console.WriteLine("Instructions : " + INSTRUCTION);
-            Console.WriteLine("Feed Time : " + feedTime);
+            Console.WriteLine("Feeding Time : " + feedTime);
             Console.WriteLine(" ");
         }
     }
