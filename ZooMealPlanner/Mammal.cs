@@ -27,6 +27,18 @@ namespace ZooMealPlanner
             return animalWeight;
         }
 
-        
+        public void DisplayMeal(Decimal weight, Decimal serveRatio, string type, string species, string food, string feedTime)
+        {
+
+            Console.WriteLine("Meal Recommendation :");
+            Console.WriteLine("********************");
+            Console.WriteLine("Mammal Type: " + type);
+            Console.WriteLine("Species: " + species);
+            Console.WriteLine("Weight: " + weight.ToString("F") + "KG");
+            Console.WriteLine("Serving : " + (object)Math.Round(Convert.ToDecimal(weight * serveRatio), 3) + " " + food);
+            Console.WriteLine("Instructions : " + INSTRUCTION);
+            Console.WriteLine("Feed Time : " + feedTime);
+            Console.WriteLine(" ");
+        }
     }
 }
