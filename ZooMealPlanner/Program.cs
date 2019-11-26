@@ -24,7 +24,28 @@ namespace ZooMealPlanner
 
                 string selection = Console.ReadLine();
 
+                while (!selection.Equals("1") && !selection.Equals("2"))
+                {
+                    Console.WriteLine("Choose a valid option");
+                    selection = Console.ReadLine();
+                }
+
+                switch (selection)
+                {
+                    case "1":
+                        Monkey myMonkey = new Monkey();
+                        break;
+                    case "2":
+                        Bear myBear = new Bear();
+                        break;
+                }
                 
+                Console.Write("Press '3' & enter to close the console app, or press any other key & Enter to continue on: ");
+                if (Console.ReadLine() == "3")
+                {
+                    close = true;
+                }
+
             }
         }
     }
